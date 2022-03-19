@@ -1,7 +1,7 @@
 "use strict";
 // Clase Principal
 // Se deben importar todos
-//exports.__esModule = true;
+exports.__esModule = true;
 var direccion_1 = require("./direccion");
 var mail_1 = require("./mail");
 var persona_1 = require("./persona");
