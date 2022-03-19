@@ -114,12 +114,16 @@ const nuevaDireccion = new Direccion(
   "Palencia",
   "Palencia"
 );
-const nuevoMail = new Mail("trabajo", "ep.garcia@outlook.com");
-const nuevoTelefono = new Telefono("trabajo", 674963684);
+personaModificada.direcciones.pop();
+personaModificada.direcciones.push(nuevaDireccion);
 
-personaModificada.agregarNuevaDireccion(nuevaDireccion);
-personaModificada.agregarNuevoMail(nuevoMail);
-personaModificada.agregarNuevoTelefono(nuevoTelefono);
+const nuevoMail = new Mail("trabajo", "ep.garcia@outlook.com");
+personaModificada.mails.pop();
+personaModificada.mails.push(nuevoMail);
+
+const nuevoTelefono = new Telefono("trabajo", 674963684);
+personaModificada.telefonos.pop();
+personaModificada.telefonos.push(nuevoTelefono);
 
 console.log("Contactos DESPUÉS de los cambios:");
 console.log(personaPaula);
